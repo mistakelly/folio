@@ -1,0 +1,77 @@
+.bubbles__up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  padding: 0 5rem;
+}
+
+.bubbles__down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.bubbles__up img {
+  width: 20px;
+  border-radius: 50%;
+  z-index: 3;
+  animation: spillDown 7s linear infinite;
+  opacity: 0;
+}
+
+.bubbles__down img {
+  width: 20px;
+  animation: spillUp 7s linear infinite;
+  border-radius: 50%;
+  z-index: 3;
+  opacity: 0;
+}
+
+.bubbles__down img:nth-child(1) {
+  animation-delay: 1s;
+  width: 15px;
+  height: 15px;
+}
+
+.bubbles__down img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.bubbles__down img:nth-child(3) {
+  animation-delay: 8s;
+  width: 15px;
+  height: 15px;
+}
+
+.bubbles__down img:nth-child(4) {
+  animation-delay: 10s;
+}
+
+/* IMAGE UP. */
+
+.bubbles__up img:nth-child(1) {
+  animation-delay: 3s;
+}
+
+.bubbles__up img:nth-child(2) {
+  animation-delay: 6s;
+  width: 15px;
+  height: 15px;
+}
+
+.bubbles__up img:nth-child(3) {
+  animation-delay: 12s;
+}
+
+.bubbles__up img:nth-child(4) {
+  animation-delay: 15s;
+  width: 15px;
+  height: 15px;
+}

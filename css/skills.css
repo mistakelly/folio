@@ -28,14 +28,7 @@
   align-items: center;
   justify-content: space-between;
 }
-/*
-  .technical__skills {
-	flex: 1;
-  }
 
-  .proffessional__skills {
-	flex: 1;
-  } */
 .bar {
   width: 100%;
   height: 10px;
@@ -54,14 +47,32 @@
   border-radius: 50px;
 }
 
+.skill__info .bar .skill__info__html {
+  width: 70%;
+  animation: html 4s;
+}
+
+.skill__info .bar .skill__info__css {
+  width: 60%;
+  animation: css 5s;
+}
+
+.skill__info .bar .skill__info__sass {
+  width: 50%;
+  animation: sass 6s;
+}
+
+.skill__info .bar .skill__info__javascript {
+  width: 40%;
+  animation: javascript 7s;
+}
+
 .proffessional__skills {
   margin-top: 1.9rem;
 }
 
 .proffessional__skills h3 {
   margin-bottom: 2.5rem;
-  /* position: absolute; */
-  /* top: 15%; */
 }
 
 .professional__skills__content__item {
@@ -85,8 +96,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .professional__skills__content__item__info small {
   text-align: center;
 }
+.skill__info .bar .skill__info__html {
+  width: 70%;
+  animation: html 4s;
+}
 
-/* contact me */
+.skill__info .bar .skill__info__css {
+  width: 60%;
+  animation: css 5s;
+}
+
+.skill__info .bar .skill__info__sass {
+  width: 50%;
+  animation: sass 6s;
+}
+
+.skill__info .bar .skill__info__javascript {
+  width: 40%;
+  animation: javascript 7s;
+}
