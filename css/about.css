@@ -132,3 +132,75 @@
 .about__img__wrapper-2 {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .section__about {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: max-content;
+  }
+
+  .about__img__wrapper {
+    display: none;
+  }
+
+  .about__info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__about {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: max-content;
+    /* background: red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__about h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .about {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-position: right;
+	  background-size: contain;
+	  background-repeat: no-repeat; */
+  }
+
+  .about__info {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about__info p {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .about__img__wrapper {
+    display: none;
+  }
+
+  .about__img__wrapper-2 {
+    display: block;
+    margin-top: 1rem;
+    width: 40vh;
+  }
+
+  .about__img__wrapper-2 img {
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 1.3px;
+  }
+}
