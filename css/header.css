@@ -1,0 +1,176 @@
+.main__img__wrapper {
+  width: 25vw;
+  height: 50vh;
+  margin: 1%;
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main__img__wrapper img {
+  border-radius: 10px;
+  height: 100%;
+  max-width: 100%;
+}
+
+.main__info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+.main__info * {
+  margin-bottom: 1rem;
+}
+.main__info p {
+  font-weight: 400;
+  color: #f12711;
+  text-align: center;
+  z-index: 4;
+  font-size: 1.2rem;
+}
+.main__info h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+.bubbles__up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+
+.bubbles__up img {
+  width: 30px;
+  border-radius: 50%;
+  z-index: 3;
+  animation: spillDown 7s linear infinite;
+  opacity: 0;
+}
+
+.bubbles__up img:nth-child(1) {
+  animation-delay: 1s;
+  width: 10px;
+}
+
+.bubbles__up img:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.bubbles__up img:nth-child(3) {
+  animation-delay: 8s;
+  width: 20px;
+}
+
+.bubbles__up img:nth-child(4) {
+  animation-delay: 10s;
+}
+
+.bubbles__up img:nth-child(5) {
+  animation-delay: 12s;
+}
+
+.bubbles__up img:nth-child(6) {
+  animation-delay: 14s;
+  width: 24px;
+}
+
+.bubbles__up img:nth-child(7) {
+  animation-delay: 16s;
+}
+
+.bubbles__up img:nth-child(8) {
+  animation-delay: 20s;
+  width: 15px;
+}
+
+.bubbles__down img:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.bubbles__down img:nth-child(2) {
+  animation-delay: 6s;
+  width: 20px;
+}
+
+.bubbles__down img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.bubbles__down img:nth-child(4) {
+  animation-delay: 10s;
+  width: 12px;
+}
+
+.bubbles__down img:nth-child(5) {
+  animation-delay: 12s;
+}
+
+.bubbles__down img:nth-child(6) {
+  animation-delay: 14s;
+  width: 18px;
+}
+
+.bubbles__down img:nth-child(7) {
+  animation-delay: 16s;
+  width: 18px;
+}
+
+.bubbles__down img:nth-child(8) {
+  animation-delay: 20s;
+}
+
+.bubbles__down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.bubbles__down img {
+  width: 30px;
+  animation: spillUp 7s linear infinite;
+  border-radius: 50%;
+  z-index: 3;
+  opacity: 0;
+}
+
+.main__info button {
+  text-decoration: none;
+  border: 2px solid black;
+  background: transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.main__icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 2rem;
+  color: var(--color-icons);
+  position: fixed;
+  right: 2%;
+  z-index: 5;
+}
+
+.main__icons i {
+  /* box-shadow: var(--shadow); */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* color: black; */
+  /* box-shadow: var(--shadow); */
+}

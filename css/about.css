@@ -1,0 +1,31 @@
+.section__about {
+  height: 80vh;
+}
+
+.social__media__icon i {
+  margin-right: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  animation: rotate 10s linear infinite;
+}
+
+.social__media__icon i:hover {
+  cursor: pointer;
+}
+
+.fa-github {
+  color: #181717;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: rgb(5, 90, 136);
+}
+
+.fa-envelope {
+  color: #d44638;
+}

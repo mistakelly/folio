@@ -27,9 +27,9 @@ p {
   --color-body: rgb(222, 222, 222);
   --prinmary-color: rgb(246, 178, 151);
   --color-text-light: #ffeee8;
-  --color-icons: rgb(127, 127, 127);
+  /* --color-icons: rgb(127, 127, 127); */
   --color-background-icon: rgb(230, 229, 230);
-  --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
   --bfont-size: 16px;
   --container-width: 98%;
   --h1-font: 36px;
@@ -57,9 +57,9 @@ h1 {
 
 .main__container {
   background-image: linear-gradient(
-      to top,
-      rgb(0, 236, 250, 0.3) 50%,
-      rgb(2, 250, 250, 0.3)
+      to bottom,
+      rgb(0, 0, 0, 0.7) 70%,
+      rgb(0, 236, 250, 0.6)
     ),
     url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
   background-size: cover;
@@ -102,7 +102,7 @@ h1 {
 }
 .main__info p {
   font-weight: 900;
-  color: black;
+  color: white;
   text-align: center;
   z-index: 4;
 }
@@ -181,19 +181,19 @@ h1 {
   right: 2%;
   z-index: 5;
 }
-.fa-house {
-  /* background: #ffeee8; */
-}
 
 .main__icons i {
-  box-shadow: var(--shadow);
   padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: black;
-  /* box-shadow: var(--shadow); */
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.fa-house {
+  color: #1fa2ff !important;
 }
 
 /* ///////////////////////////////////////////     media query for larger screens        ////////////////////////////////////// */
