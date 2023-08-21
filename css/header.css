@@ -1,7 +1,7 @@
 .main__container {
   background-image: linear-gradient(
       to bottom,
-      rgb(0, 0, 0, 0.4) 70%,
+      rgb(0, 0, 0, 0.4),
       rgb(0, 236, 250, 0.6)
     ),
     url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
@@ -33,7 +33,7 @@
 }
 
 .main__info {
-  width: 90%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +45,7 @@
 }
 .main__info p {
   font-weight: 900;
-  color: white;
+  color: black;
   text-align: center;
   z-index: 4;
 }
@@ -63,14 +63,19 @@
 }
 
 .main__icons {
+  background: black;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
   gap: 2rem;
+  height: 100vh;
   color: var(--color-icons);
   position: fixed;
-  right: 2%;
-  z-index: 5;
+  right: 0;
+  /* z-index: 5; */
 }
 
 .main__icons i {
