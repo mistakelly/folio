@@ -13,7 +13,6 @@
   margin: 0 auto;
   align-items: center;
   color: #fe8c00;
-  /* overflow: hidden; */
 }
 
 .main__img__wrapper {
@@ -38,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 4rem;
+  margin: 6rem 0 0 0;
 }
 .main__info * {
   margin-bottom: 1rem;
@@ -49,6 +48,7 @@
   text-align: center;
   z-index: 4;
   font-size: 1.3rem;
+  line-height: 1.5;
 }
 .main__info h1 {
   font-weight: 900;
@@ -62,10 +62,12 @@
   box-shadow: var(--shadow);
   border: none;
   border-bottom: 2px solid white;
+  margin-top: 2rem;
 }
 
 .main__info button a {
   color: #26d0ce;
+
   font-size: 1rem;
   font-weight: 900;
 }
@@ -93,7 +95,7 @@
   border-radius: 50%;
   color: white;
   box-shadow: var(--shadow);
-  border: 2px solid #fe8c00;
+  border: 2px solid #26d0ce;
 }
 
 .main__social__icon {
@@ -154,7 +156,7 @@
   }
   .main__info {
     width: 98vw;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .main__info p {
     font-size: 1rem;
