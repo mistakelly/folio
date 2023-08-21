@@ -11,6 +11,9 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nova Square', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -20,7 +23,7 @@ img {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {

@@ -48,6 +48,7 @@
   color: white;
   text-align: center;
   z-index: 4;
+  font-size: 1.3rem;
 }
 .main__info h1 {
   font-weight: 900;
@@ -55,7 +56,6 @@
 
 .main__info button {
   text-decoration: none;
-  /* border: 2px solid black; */
   background: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 100px;
