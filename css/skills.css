@@ -112,7 +112,7 @@
   transition: all ease-in-out !important;
   animation: tilt 40s infinite;
   right: 3%;
-  position: relative;
+  /* position: relative; */
 }
 
 .box::after {
