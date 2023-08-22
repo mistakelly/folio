@@ -67,23 +67,6 @@
   animation: javascript 7s;
 }
 
-.professional__skills__content__item__circle {
-  width: 100%;
-  height: 120px;
-  border: 3px solid black;
-}
-
-.professional__skills__content__item__info big {
-  color: white;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.professional__skills__content__item__info small {
-  text-align: center;
-}
 .skill__info .bar .skill__info__html {
   width: 70%;
   animation: html 4s;
@@ -103,3 +86,107 @@
   width: 40%;
   animation: javascript 7s;
 }
+
+.proffessional__skills {
+  perspective: 1500px;
+  /* position: absolute; */
+}
+
+.box {
+  /* position: absolute; */
+  height: 250px;
+  width: 250px;
+  transform-style: preserve-3d;
+  transition: all ease-in-out !important;
+  animation: tilt 10s infinite;
+  /* transform: rotateY(130deg); */
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(130deg);
+  }
+  80% {
+    transform: rotateY(-130deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 25% {
+    transform: rotateY(130deg);
+  }
+  50% {
+    transform: rotateX(130deg);
+  }
+  75% {
+    transform: rotateX(-130deg);
+  }
+  80% {
+
+    transform: scale(1.2);
+  } */
+
+.card {
+  width: 250px;
+  height: 250px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0.2rem 0 0 0; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 5px solid green; */
+  position: absolute;
+
+  /* box-sizing: border-box; */
+}
+
+#front {
+  transform: translateZ(125px);
+}
+
+#back {
+  transform: translateZ(-125px);
+}
+
+#left {
+  right: 88px;
+  transform: rotateY(-90deg);
+}
+
+#right {
+  left: 120px;
+  transform: rotateY(90deg);
+}
+
+#top {
+  bottom: 88px;
+  transform: rotateX(90deg);
+}
+
+#bottom {
+  top: 120px;
+  transform: rotateX(-90deg);
+}
+
+#back * {
+  transform: rotate(-360deg) scale(1);
+}
+/*
+#front {
+  right: 125px;
+  transform: rotateY(80deg);
+}
+
+#left {
+  right: 125px;
+  transform: rotateY(80deg);
+} */
