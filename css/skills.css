@@ -32,7 +32,7 @@
 .bar {
   width: 100%;
   height: 10px;
-  background: green;
+  background: rgba(0, 0, 0, 0.9);
   margin-top: 1rem;
   border-radius: 50px;
   position: relative;
@@ -42,7 +42,11 @@
   position: absolute;
   height: 100%;
   width: 50%;
-  background: black;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgb(0, 236, 250, 0.9)
+  );
   left: 0;
   border-radius: 50px;
 }
@@ -87,19 +91,43 @@
   animation: javascript 7s;
 }
 
+/*  PROFFESSIONAL SKILLS */
+
 .proffessional__skills {
   perspective: 1500px;
-  /* position: absolute; */
+  position: absolute;
+  right: 12%;
+  /* top: 39%; */
+}
+.proffessional__skills h3 {
+  position: absolute;
+  top: -20%;
+  width: 100vw;
 }
 
 .box {
-  /* position: absolute; */
   height: 250px;
   width: 250px;
   transform-style: preserve-3d;
   transition: all ease-in-out !important;
-  animation: tilt 10s infinite;
-  /* transform: rotateY(130deg); */
+  animation: tilt 40s infinite;
+  right: 3%;
+  position: relative;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  bottom: -160px;
+  left: 7%;
+  right: 0;
+  /* z-index: -1; Place the pseudo-element behind the .card */
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  transform: rotateX(90deg);
 }
 
 @keyframes tilt {
@@ -107,7 +135,7 @@
     transform: rotateY(0);
   }
   50% {
-    transform: rotateY(130deg);
+    transform: rotateY(-360deg);
   }
   80% {
     transform: rotateY(-130deg);
@@ -117,36 +145,20 @@
   }
 }
 
-/* 25% {
-    transform: rotateY(130deg);
-  }
-  50% {
-    transform: rotateX(130deg);
-  }
-  75% {
-    transform: rotateX(-130deg);
-  }
-  80% {
-
-    transform: scale(1.2);
-  } */
-
 .card {
   width: 250px;
   height: 250px;
-  background: black;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgb(0, 236, 250, 0.9)
+  );
   color: white;
   text-align: center;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  /* padding: 0.2rem 0 0 0; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* border: 5px solid green; */
   position: absolute;
-
-  /* box-sizing: border-box; */
 }
 
 #front {
@@ -154,7 +166,7 @@
 }
 
 #back {
-  transform: translateZ(-125px);
+  transform: translateZ(-125px) rotateY(180deg);
 }
 
 #left {
@@ -176,17 +188,11 @@
   top: 120px;
   transform: rotateX(-90deg);
 }
+/*
+#left img {
+  width: 10rem;
+  height: 100vh;
+} */
 
 #back * {
-  transform: rotate(-360deg) scale(1);
 }
-/*
-#front {
-  right: 125px;
-  transform: rotateY(80deg);
-}
-
-#left {
-  right: 125px;
-  transform: rotateY(80deg);
-} */

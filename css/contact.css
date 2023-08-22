@@ -63,7 +63,11 @@ form button {
 }
 
 .contact__content {
-  background: #d44638;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 236, 250, 0.9),
+    rgb(0, 0, 0) 70%
+  );
   display: flex;
   align-items: start;
   flex-direction: column;
