@@ -21,17 +21,19 @@
   width: 25vw;
   height: 50vh;
   margin: 1%;
+  background-image: url(/img/landing-page.PNG);
+  background-size: cover;
+  filter: drop-shadow(5px 3px 13px rgb(0, 0, 0));
   box-shadow: var(--shadow);
+  transition: all 0.3s ease;
 }
-
+/*
 .main__img__wrapper img {
   border-radius: 10px;
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  filter: drop-shadow(5px 3px 13px rgb(0, 0, 0));
-  /* filter: drop-shadow(5px 5px 13px black); */
-}
+} */
 
 .main__info {
   width: 60%;
@@ -54,6 +56,10 @@
 }
 .main__info h1 {
   font-weight: 900;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .main__info button {

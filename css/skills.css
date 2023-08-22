@@ -67,22 +67,6 @@
   animation: javascript 7s;
 }
 
-.proffessional__skills {
-  margin-top: 1.9rem;
-}
-
-.proffessional__skills h3 {
-  margin-bottom: 2.5rem;
-}
-
-.professional__skills__content__item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.professional__skills__content__item__box {
-  flex: 1 1 15rem;
-  position: relative;
-}
 .professional__skills__content__item__circle {
   width: 100%;
   height: 120px;
