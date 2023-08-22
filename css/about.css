@@ -1,6 +1,5 @@
 .section__about {
-  height: 100vh;
-  background: transparent;
+  height: 80vh;
 }
 
 .about {
@@ -8,7 +7,6 @@
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: transparent;
 }
 
 .section__about h1 {
