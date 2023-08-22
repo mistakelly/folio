@@ -1,5 +1,6 @@
 .section__about {
-  height: 80vh;
+  height: 100vh;
+  background: transparent;
 }
 
 .about {
@@ -7,6 +8,7 @@
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .section__about h1 {
@@ -25,7 +27,7 @@
 .about__img__wrapper {
   width: 25vw;
   height: 25vw;
-  margin-right: 1.5rem;
+  margin: 0 1rem;
   position: relative;
 }
 
@@ -66,7 +68,7 @@
 .about__info {
   width: 60vw;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .about__info p {
