@@ -1,45 +1,49 @@
 .section__about {
-  height: 80vh;
-  margin-top: 4rem;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 3rem;
 }
 
 .about {
   display: flex;
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem 1rem 0 2rem;
+  /* margin: 0; */
+  background: rgb(240, 238, 241);
 }
 
-.section__about h1 {
+.about h1 {
+  margin: 2rem 0;
   text-align: center;
-  margin: 1rem 0 0 8rem;
-  color: #fe8c00;
-  display: block;
 }
 
-.section__about h3 {
-  text-align: left;
-}
-.section__about h2 {
-  text-align: center;
-}
 .about__img__wrapper {
   width: 25vw;
   height: 25vw;
-  margin: 0 1rem;
-  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  /* rememeber to add a border linear effect */
+  border: 4px solid white;
+  padding: 1.2rem;
+  overflow: hidden;
 }
 
-.about__img__wrapper img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  object-fit: cover;
+.about__info h3 {
+  text-align: left;
+  margin-left: 3rem;
+}
+.about__info h2 {
+  margin-bottom: 1rem;
 }
 
+.about__info p {
+  line-height: 1.3;
+  /* letter-spacing: 1px; */
+}
+
+/*
 .about__img:nth-child(1) {
   border: 2px solid black;
   clip-path: polygon(28% 0, 0 31%, 0 0);
@@ -62,33 +66,12 @@
   border: 2px solid black;
   transform: translateY(15px);
   clip-path: polygon(100% 47%, 100% 100%, 66% 99%, 65% 94%, 66% 100%);
-}
+} */
 
 .about__info {
-  width: 60vw;
+  width: 80vw;
   text-align: center;
-  margin-top: 5rem;
-}
-
-.about__info p {
-  line-height: 1.7;
-  letter-spacing: 1;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid black;
-  font-size: 16px;
-}
-
-.about__subsection {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  align-items: center;
-}
-
-.about__data li {
-  list-style: none;
-  display: flex;
-  gap: 0.6rem;
+  margin: 2rem auto;
 }
 
 .about__info button {
@@ -100,34 +83,6 @@
   background: none;
   background: linear-gradient(rgb(0, 180, 219, 0.4), rgb(0, 0, 0));
   color: white;
-}
-
-.social__media__icon i {
-  margin-right: 2rem;
-  padding: 1rem;
-  border-radius: 50%;
-  border: 2px solid black;
-  animation: rotate 10s linear infinite;
-}
-
-.social__media__icon i:hover {
-  cursor: pointer;
-}
-
-.fa-github {
-  color: #181717;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
-
-.fa-linkedin {
-  color: rgb(5, 90, 136);
-}
-
-.fa-envelope {
-  color: #d44638;
 }
 
 .about__img__wrapper-2 {

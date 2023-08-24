@@ -2,6 +2,9 @@
   height: 90vh;
   padding: 0 4rem;
   position: relative;
+  background: rgb(240, 238, 241);
+  /* z-index: -1; */
+  box-shadow: var(--shadow);
 }
 
 .section__skills h1 {
