@@ -15,8 +15,8 @@
   margin: 0 auto;
   align-items: center;
   color: #fe8c00;
-
   user-select: none;
+  position: relative;
 }
 
 .main__img__wrapper {
@@ -28,6 +28,14 @@
   filter: drop-shadow(5px 3px 13px rgb(0, 0, 0));
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
+}
+.bird {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  transition: all 3s ease-in-out;
 }
 
 .main__info {
@@ -89,6 +97,7 @@
   position: fixed;
   right: 0;
   box-shadow: var(--shadow);
+  /* position: relative; */
 }
 
 .main__icons i {
@@ -110,9 +119,13 @@
   bottom: 1%;
 }
 
-.home span {
-  /* position: relative; */
-}
+/* .home {
+  position: absolute;
+  top: 32%;
+  right: 5%;
+  background: white;
+  padding: 0.3rem 3rem;
+} */
 
 .fa-house {
   color: #26d0ce !important;
@@ -148,6 +161,29 @@
   }
 }
 
+.fish__container {
+  position: absolute;
+  height: 31px;
+  width: 50px;
+  right: 0;
+  z-index: -1;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  /* transform: rotate(30deg) rotate(-30deg); */
+  animation: swim 4s linear infinite;
+}
+@keyframes swim {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(100vw); */
+  }
+}
 @media screen and (max-width: 600px) {
   .container {
     width: 100vw;
