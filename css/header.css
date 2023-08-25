@@ -17,6 +17,7 @@
   color: #fe8c00;
   user-select: none;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .main__img__wrapper {
@@ -98,6 +99,7 @@
   right: 0;
   box-shadow: var(--shadow);
   z-index: 10;
+  cursor: pointer;
   /* position: relative; */
 }
 
