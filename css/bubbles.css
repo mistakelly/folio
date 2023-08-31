@@ -6,7 +6,8 @@
   position: absolute;
   top: 0;
   padding: 0 5rem;
-  z-index: -5;
+  z-index: -5000000;
+  display: none;
 }
 
 .bubbles__down {
@@ -17,7 +18,8 @@
   position: absolute;
   bottom: 0;
   padding: 1rem;
-  z-index: -5;
+  z-index: -500000;
+  display: none;
 }
 
 .bubbles__up img {
@@ -38,8 +40,8 @@
 
 .bubbles__down img:nth-child(1) {
   animation-delay: 1s;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
 .bubbles__down img:nth-child(2) {

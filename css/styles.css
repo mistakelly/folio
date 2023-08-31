@@ -14,11 +14,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Nova Square', cursive;
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgb(2, 6, 23,.9),
     rgb(15, 23, 42,.9)
 
-  );
+  ); */
 }
 
 img {
