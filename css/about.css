@@ -105,38 +105,116 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width:600px)
+{
   .section__about {
-    width: 100vw;
-    background-color: red;
-    padding: 1rem;
-    height: 100vh;
-  }
-  .section__about h1 {
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    padding: 0;
-  }
-  .about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .about__info {
-    width: 100vw;
-  }
-  .about__info p {
-    font-size: 1rem;
-    text-align: left;
-  }
-  .about__info h1 {
-    font-size: 1rem;
-  }
-  .about__img__wrapper {
-    width: 10rem;
-    height: 10rem;
-  }
-  .about__img-wrapper img {
-    width: 20;
-  }
+  height: 100vh;
+  
+margin: 0;
+padding: 0;
+
+  background-image: linear-gradient(
+      /* to top, */
+      rgb(2, 6, 23,.9),
+      rgb(15, 23, 42,.9)
+
+    );
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  background: rgb(240, 238, 241);
+  background-image: linear-gradient(
+      rgb(2, 6, 23,.9),
+      rgb(15, 23, 42,.9)
+
+    );
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.about h1 {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: none;
+}
+
+.about__img__wrapper {
+  width: 45vw;
+  height: 45vw;
+  margin: 0 auto;
+  /* rememeber to add a border linear effect */
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about__img__wrapper img {
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.about__img__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: width 3s ease;
+  z-index: 1;
+  opacity: 0.9;
+}
+.about__info h3 {
+  display: none;
+}
+.about__info h2 {
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+
+.about__info p {
+  line-height: 1.7;
+  letter-spacing:unset;
+  font-weight: 400;
+  font-size: 80%;
+  text-align: center;
+}
+
+.about__info {
+  width: 80vw;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.about__info button {
+  align-self: center;
+  justify-self: start;
+  margin-top: 1rem;
+  border: none;
+  padding: 0.7rem 1rem;
+  background: none;
+  background: linear-gradient(rgb(0, 180, 219, 0.4), rgb(0, 0, 0));
+  color: white;
+}
+
+.about__img__wrapper-2 {
+  display: none;
+}
 }
