@@ -18,7 +18,7 @@
 		<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
 		<!-- CSS LINKS -->
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/bubbles.css">
 		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="css/skills.css">
@@ -28,64 +28,94 @@
 
 
 	<body>
-		<div class="container">
+		<!-- <div class="container"> -->
 
-			<!-- MAIN CONTAINER -->
-			<div class="main__container">
-				<img src="img/bird-2069828_1280.png" alt="" class="bird">
+		<!-- MAIN CONTAINER -->
+		<nav class="nav">
+			<h3>KELVIN</h3>
+			<ul class="nav__menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">courses</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+			<div class="nav__btn">
+				<!-- button for opening the menu on mobile -->
+				<button id="open-menu-btn"><i class="fa-solid fa-bars"></i></i></button>
+				<!-- button for closing the menu on mobile -->
+				<button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+			</div>
+			
+		</nav>
+		
+		<div class="main__container">
 
-				<!-- page bubles  -->
-				<div class="bubbles__up">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-				</div>
-				<div class="bubbles__down">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-					<img src="/img/bubble.png" alt="">
-				</div>
-				<div class="fish__container">
-					<img src="/img/fish.png" alt="" class="fish">
-				</div>
+			<!-- <canvas id="canvas" width="100" height="100"></canvas> -->
+			<!-- page bubles  -->
+			<div class="bubbles__up">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+			</div>
+			<div class="bubbles__down">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+				<img src="/img/bubble.png" alt="">
+			</div>
+			<div class="fish__container">
+				<img src="/img/fish.png" alt="" class="fish">
+			</div>
 
 
-				<!-- MAIN IMAGES -->
-				<div data-tilt class="main__img__wrapper">
-				</div>
+			<!-- MAIN IMAGES -->
+			<!-- <div data-tilt class="main__img__wrapper">
+			</div> -->
 
-				<div class="main__info">
-					<h1>I'm a frontend developer</h1>
-					<p>As a passionate web developer, I specialize in harnessing the dynamic trio of HTML, CSS, and
-						JavaScript to craft immersive and interactive web experiences.</p>
-					<!-- LETS CHAT BUTTON. -->
-					<button><a href="">Let's chat</a></button>
+			<div class="main__info">
+				<h1>I'm a frontend developer</h1>
+				<p>As a passionate web developer, I specialize in harnessing the dynamic trio of HTML, CSS, and
+					JavaScript to craft immersive and interactive web experiences.</p>
+				<!-- LETS CHAT BUTTON. -->
+				<button><a href="">Contact Me</a></button>
 
-				</div>
-				<div class="main__icons">
+			</div>
+
+			<!-- <div class="main__icons">
+				<div class="icon__wrapper">
 					<i class="fa-solid fa-house"></i>
 					<i class="fa-solid fa-user" id="iconUser"></i>
 					<i class="fa-solid fa-clipboard"></i>
 					<i class="fa-solid fa-diagram-project"></i>
 					<i class="fa-solid fa-phone-volume"></i>
+				</div>
+			</div> -->
+		</div>
 
-					<div class="main__social__icon">
+
+		<!-- <div class="main__social__icon">
 						<a href="https://github.com/kels413"><i class="fa-brands fa-github"></i></a>
 						<a href="https://twitter.com/okoyekelvin347"><i class="fa-brands fa-twitter"></i></a>
 						<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					</div>
+					</div> -->
 
-				</div>
-			</div>
-		</div>
+		<!-- </div> -->
 
 		<section class="section__about" id="about">
+			<!-- <div class="bg-video"> -->
 
+
+
+			<!-- </div> -->
 			<div class="about">
 				<h1>Welcome to My World</h1>
-				<div class="about__img__wrapper">
+
+				<div data-tilt class="about__img__wrapper">
+					<div class="overlay">
+						<!-- <img src="/img/bubble.png" alt="" class="about__img__bubble"> -->
+					</div>
+
 					<img src="img/landing-page.PNG" alt="" class="about__img">
 				</div>
 
@@ -168,62 +198,6 @@
 					</div>
 
 				</div>
-				<!-- <div class="proffessional__skills">
-					<h3>PROFESSIONAL SKILLS</h3>
-					<div class="professional__skills__content">
-						<div class="professional__skills__content__item">
-							<div class="professional__skills__content__item__box">
-								<div class="professional__skills__content__item__circle">
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-								</div>
-								<div class="professional__skills__content__item__info">
-									<big>90%</big>
-									<small>TEAM WORK</small>
-								</div>
-							</div>
-
-							<div class="professional__skills__content__item__box">
-								<div class="professional__skills__content__item__circle">
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-								</div>
-								<div class="professional__skills__content__item__info">
-									<big>90%</big>
-									<small>TEAM WORK</small>
-								</div>
-							</div>
-
-							<div class="professional__skills__content__item__box">
-								<div class="professional__skills__content__item__circle">
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-								</div>
-								<div class="professional__skills__content__item__info">
-									<big>90%</big>
-									<small>TEAM WORK</small>
-								</div>
-							</div>
-
-							<div class="professional__skills__content__item__box">
-								<div class="professional__skills__content__item__circle">
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-									<div class="points" style="--i:1"></div>
-								</div>
-								<div class="professional__skills__content__item__info">
-									<big>90%</big>
-									<small>TEAM WORK</small>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div> -->
 
 				<div class="proffessional__skills">
 					<h3>PROFFESIONAL SKILL</h3>
@@ -307,6 +281,7 @@
 		</script>
 
 		<script src="script.js"></script>
+
 	</body>
 
 </html>

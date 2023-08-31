@@ -1,5 +1,4 @@
-*,
-a {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -15,8 +14,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Nova Square', cursive;
   font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(
+    rgb(2, 6, 23,.9),
+    rgb(15, 23, 42,.9)
 
-  overflow-x: hidden;
+  );
 }
 
 img {
@@ -24,9 +26,11 @@ img {
   object-fit: cover;
   width: 100%;
 }
-
 h1 {
   font-size: 3rem;
+}
+h1,
+h2 {
   color: #fe8c00;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,

@@ -96,26 +96,26 @@ window.addEventListener('scroll', function () {
   //   adding parallax scroll on the main background image.
   mainContainer.style.backgroundPositionX = scrollTop * 0.9 + 'px';
 
-  // Calculate the change in scroll position
-  const scrollChange = scrollTop - scrollBottom;
+  // // Calculate the change in scroll position
+  // const scrollChange = scrollTop - scrollBottom;
 
-  // Calculate new width for mainImgWrapper based on scroll direction
-  let newWidth = parseFloat(
-    mainImgWrapper.style.width || minImgWrapperWidth + 'vw'
-  );
+  // // Calculate new width for mainImgWrapper based on scroll direction
+  // let newWidth = parseFloat(
+  //   mainImgWrapper.style.width || minImgWrapperWidth + 'vw'
+  // );
 
-  // Apply changes to width based on scroll direction
-  if (scrollChange > 0 && newWidth > 0) {
-    newWidth -= scrollChange * 0.01; // Adjust the rate of change here
-  } else if (scrollChange < 0 && newWidth < 100) {
-    newWidth -= scrollChange * 0.01; // Adjust the rate of change here
-  }
+  // // Apply changes to width based on scroll direction
+  // if (scrollChange > 0 && newWidth > 0) {
+  //   newWidth -= scrollChange * 0.01; // Adjust the rate of change here
+  // } else if (scrollChange < 0 && newWidth < 100) {
+  //   newWidth -= scrollChange * 0.01; // Adjust the rate of change here
+  // }
 
-  // Apply the new width to mainImgWrapper
-  mainImgWrapper.style.width = newWidth + 'vw';
+  // // Apply the new width to mainImgWrapper
+  // mainImgWrapper.style.width = newWidth + 'vw';
 
-  // Update scrollBottom for the next iteration
-  scrollBottom = scrollTop;
+  // // Update scrollBottom for the next iteration
+  // scrollBottom = scrollTop;
 });
 
 // PRACTICE
@@ -143,22 +143,3 @@ window.addEventListener('scroll', function () {
 //     }
 //   });
 // });
-
-const obj = {
-  kelly: 'talibans',
-  okoye: 'atana afufu okwu boi',
-  isaac: 'say no more',
-  nelson: 'good work ethics',
-};
-
-// Object.keys(obj).forEach(key => {
-//   console.log(key);
-// });
-
-const array = ['kelly', 'okoye', 'izuchukwu', 'nwafor', 'dominic'];
-array[2] = 'obinna';
-const newArray = array.forEach((arr, i) => {
-  // console.log(add);
-  // console.log(arr, i);
-});
-// console.log(array);

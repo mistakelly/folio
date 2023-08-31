@@ -6,6 +6,7 @@
   position: absolute;
   top: 0;
   padding: 0 5rem;
+  z-index: -5;
 }
 
 .bubbles__down {
@@ -16,6 +17,7 @@
   position: absolute;
   bottom: 0;
   padding: 1rem;
+  z-index: -5;
 }
 
 .bubbles__up img {

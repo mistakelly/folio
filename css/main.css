@@ -1,0 +1,281 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: black; */
+  height: 3rem;
+  padding:0 1rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+
+}
+
+nav h3{
+  color: white;
+}
+
+.nav__menu{
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__menu li  {
+  list-style: none;
+  color: white;
+}
+.nav__menu li a{
+  color: white;
+
+}
+
+.nav__btn{
+  display: none;
+}
+
+.fish__container{
+  width: 100px;
+  z-index: -1;
+  animation: fish 40s linear infinite;
+  transition: all .5s;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+
+
+@keyframes fish {
+  from {
+    transform: rotate(20deg);
+    }
+
+
+    to   {
+      transform    :rotate(-20deg) ;
+      }
+
+   0%{
+    opacity: 0;
+   }
+
+  
+    
+    100%{
+      opacity: 5;
+      transform: translateX(-100vw);
+    };
+  }
+    /* } */
+
+  
+
+
+
+
+.main__container {
+  background-image: linear-gradient(
+      to top,
+      rgb(2, 6, 23,.9),
+      rgb(15, 23, 42,.9),
+      rgb(0,0,0,0.9)
+
+    ),
+    url(/img/landing.svg);
+    /* box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-size: contain;
+  background-position: left;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 4%; */
+  /* margin: 0 auto; */
+  user-select: none;
+  position: relative;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+
+/*
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: ;
+} */
+.main__img__wrapper {
+  width: 25vw;
+  height: 50vh;
+  margin: 1%;
+  background-image: url(/img/landing-page.PNG);
+  background-size: cover;
+  filter: drop-shadow(5px 3px 13px rgb(0, 0, 0));
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.icon__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2rem;
+  right: 0;
+  position: fixed;
+  /* top: 30%; */
+  /* margin-bottom: 4rem; */
+  color: white;
+  z-index: 2;
+  /* padding: 3rem; */
+  /* background: red; */
+}
+
+.icon__wrapper i {
+  padding: 1rem;
+}
+
+.fa-house {
+  background: red;
+}
+.fa-user {
+  background-color: green;
+}
+.fa-clipboard {
+  background: blue;
+}
+
+.fa-phone-volume {
+  background: orange;
+}
+
+.bird {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  transition: all 3s ease-in-out;
+}
+
+.main__info {
+  width: 60%;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10rem auto; */
+
+}
+.main__info * {
+  margin-bottom: 1rem;
+}
+.main__info p {
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  z-index: 4;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.main__info h1 {
+  font-weight: 900;
+}
+
+.main__info button {
+  text-decoration: none;
+  background: transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  box-shadow: 0 5px 0 rgb(25, 255, 255, 0.3);
+  border: none;
+  border-bottom: 2px solid white;
+  margin-top: 2rem;
+}
+
+.main__info button a {
+  color: #26d0ce;
+
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.fa-house {
+  background: red;
+}
+.fa-user {
+  background-color: green;
+}
+.fa-clipboard {
+  background: blue;
+}
+
+.fa-phone-volume {
+  background: orange;
+}
+
+.main__social__icon {
+  position: absolute;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  bottom: 1%;
+}
+
+/* ////////////////////////  MEDIA QUERY ////////////// //////////////////////////////////////////////////*/
+
+@media screen and (max-width:600px)
+{
+nav{
+  display: none;
+};
+
+  .main__container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: left;
+  background-size: contain;
+  margin: 0;
+  padding: 1rem;
+  }
+
+
+  .main__info {
+    width: 90%;
+    margin-top: 10rem;
+    /* height: 70vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 10rem auto; */
+  
+  }
+
+
+  .main__info h1 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .main__info p {
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+}
